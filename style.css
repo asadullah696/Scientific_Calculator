@@ -1,0 +1,484 @@
+
+@font-face {
+    font-family: calculator;
+    src: url(./fonts/LOOPY___.ttf);
+}
+
+body{
+    display: flex;
+    background-color: lightcoral;
+}
+div.scientificcalculator{
+    display: flex;
+    position: absolute;
+    left: 400px;
+    height: 650px;
+    width: 400px;
+    background-color: lightgreen;
+    border-radius: 40px 40px 40px 80px;
+    box-shadow: 5px 5px 3px black;
+    color: white;
+    font-size: 30px;
+    text-indent: 10px;
+}
+div.screencalculator{
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+    left: 10px;
+    height: 80px;
+    width: 380px;
+    background-color: rgb(174, 174, 174);
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px black;
+}
+div.inputdata{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 380px;
+}
+div.inputdataresult{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    width: 380px;
+    justify-content: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.buttons{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    height: 500px;
+    width: 380px;
+    /* background-color: aqua; */
+    border-radius: 40px 40px 40px 80px;
+    box-shadow: 5px 5px 5px red;
+}
+div.scientificfeature{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 240px;
+    width: 370px;
+    background-color: gray;
+    border-radius: 40px 40px 0px 0px;
+    box-shadow: -5px 5px 5px blue;
+}
+div.basicfeature{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 240px;
+    width: 370px;
+    background-color: rgb(238, 252, 177);
+    border-radius: 0px 0px 40px 80px;
+    box-shadow: 5px 5px 5px blue;
+}
+div.button7{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 41px;
+    width: 68px;
+    /* background-color: black; */
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button8{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 77px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button9{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 150px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonDEL{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 223px;
+    height: 41px;
+    width: 68px;
+    background-color: rgb(252, 2, 2);
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonAC{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 296px;
+    height: 41px;
+    width: 68px;
+    background-color: rgb(252, 2, 2);
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button4{
+    display: flex;
+    position: absolute;
+    top: 51px;
+    left: 5px;
+    height: 41px;
+    width: 68px;
+    /* background-color: black; */
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button5{
+    display: flex;
+    position: absolute;
+    top: 51px;
+    left: 77px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button6{
+    display: flex;
+    position: absolute;
+    top: 51px;
+    left: 150px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonmultiply{
+    display: flex;
+    position: absolute;
+    top: 51px;
+    left: 223px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 55px;
+}
+div.buttondivide{
+    display: flex;
+    position: absolute;
+    top: 51px;
+    left: 296px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button1{
+    display: flex;
+    position: absolute;
+    top: 102px;
+    left: 5px;
+    height: 41px;
+    width: 68px;
+    /* background-color: black; */
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button2{
+    display: flex;
+    position: absolute;
+    top: 102px;
+    left: 77px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button3{
+    display: flex;
+    position: absolute;
+    top: 102px;
+    left: 150px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonplus{
+    display: flex;
+    position: absolute;
+    top: 102px;
+    left: 223px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 38px;
+}
+div.buttonminus{
+    display: flex;
+    position: absolute;
+    top: 102px;
+    left: 296px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.button0{
+    display: flex;
+    position: absolute;
+    top: 153px;
+    left: 5px;
+    height: 41px;
+    width: 68px;
+    /* background-color: black; */
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonpoint{
+    display: flex;
+    position: absolute;
+    top: 153px;
+    left: 77px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonexp{
+    display: flex;
+    position: absolute;
+    top: 153px;
+    left: 150px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+div.buttonAns{
+    display: flex;
+    position: absolute;
+    top: 153px;
+    left: 223px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 38px;
+}
+div.buttonequal{
+    display: flex;
+    position: absolute;
+    top: 153px;
+    left: 296px;
+    height: 41px;
+    width: 68px;
+    background-color: gray;
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 40px;
+    justify-content: center;
+    font-family: monospace;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    text-shadow: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    border: none;
+    color: inherit;
+}
+/* button:hover{
+    cursor: pointer;
+} */
+div.bscbtn:hover{
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 3px 3px gray;
+    text-shadow: 2px 2px gray;
+}
+div.rstbtn:hover{
+    cursor: pointer;
+    background-color: brown;
+    box-shadow: 3px 3px gray;
+    text-shadow: 3px 3px red;
+}
+a{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    text-shadow: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    border: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+
