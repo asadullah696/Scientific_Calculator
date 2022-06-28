@@ -72,6 +72,324 @@ div.scientificfeature{
     border-radius: 40px 40px 0px 0px;
     box-shadow: -5px 5px 5px blue;
 }
+div.switch{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 110px;
+    border-radius: 20px;
+    background-color: black;
+}
+div.mode{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 50px;
+    text-indent: 0px;
+}
+div.inv{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.openbracket{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.closebracket{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 310px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.sin{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.cos{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.tan{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.x1{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 190px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 25px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.rp{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.deg{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 310px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.in{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.log{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.ypower{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.xpower{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 190px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.abc{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.drg{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    left: 310px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.hyp{
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.rm{
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 70px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 0px;
+}
+div.xm{
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 130px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 10px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.mplus{
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 190px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.arrowtoright{
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
+div.data{
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 310px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 45px;
+    text-indent: 5px;
+}
 div.basicfeature{
     display: flex;
     position: absolute;
