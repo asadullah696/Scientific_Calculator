@@ -63,81 +63,125 @@ function answer() {
     var value = "="
     display(value)
 }
-
-function addChar(input, character) {
-	if(input.value == null || input.value == "0")
-		input.value = character
-	else
-		input.value += character
+function commaAr() {
+    var value = ","
+    display(value)
+}
+function openBracket() {
+    var value = "("
+    display(value)
+}
+function closeBracket() {
+    var value = ")"
+    display(value)
 }
 
-function cos(form) {
-	form.display.value = Math.cos(form.display.value);
+
+function tanAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    document.getElementById("inputdataresult").innerText = "tan("+value+")     =>   "+Math.tan(value);
+} 
+function sinAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText
+    document.getElementById("inputdataresult").innerText = "sin("+value+")     =>   "+Math.sin(value);
 }
-
-function sin(form) {
-	form.display.value = Math.sin(form.display.value);
+function cosAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText
+    document.getElementById("inputdataresult").innerText = "cos("+value+")     =>   "+Math.cos(value);
+} 
+function radAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText
+    document.getElementById("inputdataresult").innerText = "Deg("+value+")     =>   "+(0.0174533*value)+"(Rad)";
 }
-
-function tan(form) {
-	form.display.value = Math.tan(form.display.value);
+function degAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText
+    document.getElementById("inputdataresult").innerText = "Rad("+value+")     =>   "+(57.2958*value)+"(Deg)";
 }
-
-function sqrt(form) {
-	form.display.value = Math.sqrt(form.display.value);
+function hypAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText
+    document.getElementById("inputdataresult").innerText = "Hypot("+value+")     =>   "+ Math.hypot(value) ;
 }
-
-function ln(form) {
-	form.display.value = Math.log(form.display.value);
+function xPower(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.pow(value,2);
+        
+    document.getElementById("inputdataresult").innerHTML = value+"<sup>2</sup> => &nbsp; &nbsp; &nbsp; &nbsp;"+value1;
 }
-
-function exp(form) {
-	form.display.value = Math.exp(form.display.value);
+function yPower(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.pow(value,3);
+        
+    document.getElementById("inputdataresult").innerHTML = value+"<sup>3</sup> => &nbsp; &nbsp; &nbsp; &nbsp;"+value1;
 }
-
-function deleteChar(input) {
-	input.value = input.value.substring(0, input.value.length - 1)
+function squareRoot(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.pow(value,1/2);
+        
+    document.getElementById("inputdataresult").innerHTML = "&radic;"+value+" =>&nbsp; &nbsp; &nbsp;"+value1;
 }
-var val = 0.0;
-function percent(input) {
-  val = input.value;
-  input.value = input.value + "%";
+function cubeRoot(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.pow(value,1/3);
+        
+    document.getElementById("inputdataresult").innerHTML = "&#x221B;"+value+" =>&nbsp; &nbsp; &nbsp;"+value1;
 }
-
-function changeSign(input) {
-	if(input.value.substring(0, 1) == "-")
-		input.value = input.value.substring(1, input.value.length)
-	else
-		input.value = "-" + input.value
+function logAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.log10(value);
+    document.getElementById("inputdataresult").innerHTML = "log("+value+") =>&nbsp; &nbsp; &nbsp;"+value1;
 }
-
-function compute(form) {
-  if (val !== 0.0) {
-   var percent = form.display.value;  
-   percent = pcent.substring(percent.indexOf("%")+1);
-   form.display.value = parseFloat(percent)/100 * val;
-    val = 0.0;
- } else 
-    form.display.value = eval(form.display.value);
-  }
-
-
-function square(form) {
-	form.display.value = eval(form.display.value) * eval(form.display.value)
+function oneUpon(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = 1/value;
+    document.getElementById("inputdataresult").innerHTML = "1/"+value+" =>&nbsp; &nbsp; &nbsp;"+value1;
 }
-
-function checkNum(str) {
-	for (var i = 0; i < str.length; i++) {
-		var ch = str.charAt(i);
-		if (ch < "0" || ch > "9") {
-			if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
-				&& ch != "(" && ch!= ")" && ch != "%") {
-				alert("invalid entry!")
-				return false
-				}
-			}
-		}
-		return true
+function sinhAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.sinh(value);
+    document.getElementById("inputdataresult").innerHTML = "sinh("+value+") =>&nbsp; &nbsp; &nbsp;"+value1;
+}
+function coshAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.cosh(value);
+    document.getElementById("inputdataresult").innerHTML = "cosh("+value+") =>&nbsp; &nbsp; &nbsp;"+value1;
+}
+function cosecAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = 1/(Math.sin(value));
+    document.getElementById("inputdataresult").innerText = "cosec("+value+")     =>    "+value1;
+}
+function secAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = 1/(Math.cos(value));
+    document.getElementById("inputdataresult").innerText = "sec("+value+")     =>    "+value1;
+}
+function cotAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = 1/(Math.tan(value));
+    document.getElementById("inputdataresult").innerText = "cot("+value+")     =>    "+value1;
+}
+function abcAr(){
+    var value = document.getElementById("inputdata");
+    value = value.innerText;
+    var value1 = Math.abs(value);
+    document.getElementById("inputdataresult").innerHTML = "|"+value+"| =>  &nbsp; &nbsp;"+value1;
 }
 
 
@@ -160,92 +204,3 @@ function display(v) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function addChar(input, character) {
-// 	if(input.value == null || input.value == "0")
-// 		input.value = character
-// 	else
-// 		input.value += character
-// }
-
-// function cos(form) {
-// 	form.display.value = Math.cos(form.display.value);
-// }
-
-// function sin(form) {
-// 	form.display.value = Math.sin(form.display.value);
-// }
-
-// function tan(form) {
-// 	form.display.value = Math.tan(form.display.value);
-// }
-
-// function sqrt(form) {
-// 	form.display.value = Math.sqrt(form.display.value);
-// }
-
-// function ln(form) {
-// 	form.display.value = Math.log(form.display.value);
-// }
-
-// function exp(form) {
-// 	form.display.value = Math.exp(form.display.value);
-// }
-
-// function deleteChar(input) {
-// 	input.value = input.value.substring(0, input.value.length - 1)
-// }
-// var val = 0.0;
-// function percent(input) {
-//   val = input.value;
-//   input.value = input.value + "%";
-// }
-
-// function changeSign(input) {
-// 	if(input.value.substring(0, 1) == "-")
-// 		input.value = input.value.substring(1, input.value.length)
-// 	else
-// 		input.value = "-" + input.value
-// }
-
-// function compute(form) {
-//   //if (val !== 0.0) {
-//    // var percent = form.display.value;  
-//    // percent = pcent.substring(percent.indexOf("%")+1);
-//    // form.display.value = parseFloat(percent)/100 * val;
-//     //val = 0.0;
-//  // } else 
-//     form.display.value = eval(form.display.value);
-//   }
-
-
-// function square(form) {
-// 	form.display.value = eval(form.display.value) * eval(form.display.value)
-// }
-
-// function checkNum(str) {
-// 	for (var i = 0; i < str.length; i++) {
-// 		var ch = str.charAt(i);
-// 		if (ch < "0" || ch > "9") {
-// 			if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
-// 				&& ch != "(" && ch!= ")" && ch != "%") {
-// 				alert("invalid entry!")
-// 				return false
-// 				}
-// 			}
-// 		}
-// 		return true
-// }
