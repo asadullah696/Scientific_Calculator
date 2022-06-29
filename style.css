@@ -7,11 +7,12 @@
 body{
     display: flex;
     background-color: lightcoral;
+    
 }
 div.scientificcalculator{
     display: flex;
     position: absolute;
-    left: 400px;
+    left: 350px;
     height: 650px;
     width: 400px;
     background-color: lightgreen;
@@ -49,6 +50,7 @@ div.inputdataresult{
     width: 380px;
     justify-content: right;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
 div.buttons{
     display: flex;
